@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dropup.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+
+</head>
+<div class="container row">
+    <!-- side nav -->
+    <div class="col-4 side-nav fixed-top">
+        <div class="twitter-logo">
+            <span>
+                <i class="fab fa-twitter"></i>
+            </span>
+        </div>
+        <div class="twitter-nav-inner">
+            <ul class="twitter-nav-item-inner">
+                <li class="twitter-nav-items ">
+                    <div class="side-nav-item" id="home">
+                        <a href="#" class="active">
+                            <span class="twitter-nav-icons"><i class="fas fa-home"></i></span> <span class="twitter-nav-text">Home</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="twitter-nav-items">
+                    <div class="side-nav-item" id="explore">
+                        <a href="#">
+                            <span class="twitter-nav-icons"><i class="fas fa-hashtag"></i></span> <span class="twitter-nav-text">Explore</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="twitter-nav-items">
+                    <div class="side-nav-item" id="notifcations">
+                        <a href="#">
+                            <span class="twitter-nav-icons"><i class="far fa-bell"></i></span> <span class="twitter-nav-text">Notifications</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="twitter-nav-items">
+                    <div class="side-nav-item" id="messages">
+                        <a href="#">
+                            <span class="twitter-nav-icons"><i class=" far fa-envelope"></i></span> <span class="twitter-nav-text">Messages</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="twitter-nav-items">
+                    <div class="side-nav-item" id="bookmark">
+                        <a href="#">
+                            <span class="twitter-nav-icons"><i class=" far fa-bookmark"></i></span> <span class="twitter-nav-text">Bookmark</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="twitter-nav-items">
+                    <div class="side-nav-item" id="list">
+                        <a href="#">
+                            <span class="twitter-nav-icons"><i class=" far fa-list-alt"></i></span> <span class="twitter-nav-text">List</span>
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="twitter-nav-items">
+                    <div class="side-nav-item" id="list">
+                        <a href="#">
+                            <span class="twitter-nav-icons"><i class=" fas fa-user-alt"></i> </span><span class="twitter-nav-text">Profile</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="twitter-nav-items">
+                    <div class="side-nav-item" id="list">
+                        <a href="#">
+                            <span class="twitter-nav-icons"><i class=" fas fa-ellipsis-h"></i> </span>
+                            <span class="twitter-nav-text">more</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="tweet-buttons">
+                <button type="button" class="btn btn-primary">Tweet</button>
+            </div>
+            <div class="dropup">
+                <div class="dropbtn">
+                    <img src="https://oliver-andersen.se/wp-content/uploads/2018/03/cropped-Profile-Picture-Round-Color.png" width="50"><span class="twitter-profile-text"> Chandu <br> <small>@chandu9542....</small></span><span class="profile-icon"> <i class="
+                        fas fa-chevron-down "></i></span>
+
+                </div>
+
+                <div class=" dropup-content ">
+                    <div class="dropup-content-header ">
+                        <img src="https://oliver-andersen.se/wp-content/uploads/2018/03/cropped-Profile-Picture-Round-Color.png " width="45 ">
+                        <span>Chandu <br><small>@chandu 954224</small>
+
+                        </span>
+                        <span class="profile-icon"> <i class="fas fa-chevron-down "></i></span>
+                    </div>
+                    <ul class="drop-up-items ">
+                        <li> <a href="# ">Add an existing account</a>
+                        </li>
+                        <li> <a href="# ">Log out @chandu 954242</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end of sidenav -->
+
+
+    <!-- home navbar -->
+    <div class=" col-6 home-navbar ">
+
+        <nav class="navbar ">
+            <a class="navbar-brand ">Home</a>
+            <div class="twitter-star my-2 my-sm-0 ">
+                <img data-toggle="modal" data-target="#exampleModal" src="assets/shining.svg "> </div>
+        </nav>
+        <div class="card ">
+            <div class="row no-gutters ">
+                <div class="col-md-1 ">
+                    <img src="https://oliver-andersen.se/wp-content/uploads/2018/03/cropped-Profile-Picture-Round-Color.png " width="20 " class="card-img " alt="... ">
+                </div>
+                <div class="col-md-10 ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">
+                            <div class="form-group ">
+                                <textarea class="form-control " placeholder="What 's happening? " id="comment"></textarea>
+                            </div>
+
+                        </h5>
+                        <p class="card-text">
+                            <ul class="card-text-inner">
+                                <li class="card-text-icons">
+                                    <img src="assets/photo.svg" width="21"></i>
+                                </li>
+                                <li class="card-text-icons">
+                                    <img src="assets/gif.svg" width="21">
+                                </li>
+                                <li class="card-text-icons"> <img src="assets/bar-chart.svg" width="21"></li>
+
+                                <li class="card-text-icons"> <img src="assets/smile.svg" width="21"></li>
+                                <li class="card-text-icons"> <img src="assets/calendar.svg" width="21"></li>
+                            </ul>
+                            <div class="tweet">
+                                <button type="button" class="btn btn-primary btn-sm">Tweet</button>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="twitter-heading">
+                        <h1>Welcome to Twitter!</h1>
+                        <p class="twitter-heading-text">This is the best place to see what’s happening in your world. Find some people and topics to follow now.</p>
+
+                        <div>
+                            <button type="button" class="btn btn-primary twitter-heading-btn">Let's go!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" col-2 twitter-search-section ">
+        <div class="twitter-search-inner">
+            <div class="form-group has-search twitter-search-box">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input title="Hello" id="searchFilter" type="text" class="form-control" placeholder="Search Twitter">
+                <!-- <div id="autocomplete"></div> -->
+            </div>
+
+        </div>
+
+        <div class=" twitter-card-section ">
+            <h4 style="border-bottom: 1px solid rgb(206,206,206, 0.1); margin-bottom: 0; ">what’s happening
+            </h4>
+            <div class="tweet-card ">
+                <div class="tweet-card-content ">
+                    <h5 class="tweet-card-title ">COVID-19 . LIVE</h5>
+                    <h3 class="tweet-card-body ">COVID-19 in india</h3>
+
+                    <div class="tweet-card-img-sec-inner ">
+                        <span class="tweet-card-img-sec "><img src="https://5.imimg.com/data5/XH/OU/MY-3194489/doctor-cap-500x500.jpg "></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="tweet-card ">
+                <div class="tweet-card-content ">
+                    <h3 class="tweet-card-title " style="color:#fff; font-size: 16px; ">#Avrodh</h3>
+                    <h5 class=" tweet-card-body " style="color: #AAB8C2; font-size: 13px; margin: 0; ">Streaming now only on #SonyLIV</h5>
+                    <small><i class="fas fa-sign-out-alt "></i>  Promoted by SonyLiv</small>
+                </div>
+
+            </div>
+            <div class="tweet-card ">
+                <div class="tweet-card-content ">
+                    <h5 class="tweet-card-title ">Trending in india</h5>
+                    <h3 class="tweet-card-body " style="margin-bottom: 0; ">#UddhaResignOrCBI4SSR</h3>
+                    <small>1.5M Tweets</small>
+
+                    <div class="tweet-card-img-sec-inner ">
+                        <span class="tweet-card-img-sec "><i class="fas fa-chevron-down "></i></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="tweet-card-footer ">
+                <a href=" ">Show more</a>
+            </div>
+        </div>
+
+
+        <div class="twitter-follow-section ">
+            <h4>Who to follow
+            </h4>
+            <div class="twitter-followers ">
+                <ul class="row twitter-followers-inner ">
+                    <li class="col-2 ">
+                        <img src="https://news.phonesltd.co.uk/wp-content/uploads/huawei-logo.jpeg " style="border-radius: 25px; " width="50 "></li>
+                    <li class="col-2 " style="margin-top: 11px ">
+                        <h5 class="twitter-followers-textName ">Huawei_Europe&nbsp;<img src="assets/reward.svg " width="20 "> </h5>
+                        <h5 class="twitter-followers-subHeading ">@Huawei_Europe</h5>
+                    </li>
+                    <li class="col-4 offset-md-4 ">
+                        <button type="button " class="btn btn-outline-primary twitter-follow-btn ">Follow</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="twitter-followers ">
+                <ul class="row twitter-followers-inner ">
+                    <li class=" col-2 ">
+                        <img src="https://studiolorier.com/wp-content/uploads/2018/10/Profile-Round-Sander-Lorier.jpg " style="border-radius: 25px; " width="50 "></li>
+                    <li class="col-2 " style="margin-top: 11px ">
+                        <h5 class="twitter-followers-textName ">John&nbsp;<img src="assets/reward.svg " width="20 "> </h5>
+                        <h5 class="twitter-followers-subHeading ">@JohnAndea</h5>
+                    </li>
+                    <li class="col-4 offset-md-4 ">
+                        <button type="button " class="btn btn-outline-primary twitter-follow-btn ">Follow</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="twitter-followers ">
+                <ul class="row twitter-followers-inner ">
+                    <li class="col-2 ">
+                        <img src="https://oliver-andersen.se/wp-content/uploads/2018/03/cropped-Profile-Picture-Round-Color.png " style="border-radius: 25px; " width="50 "></li>
+                    <li class="col-2 " style="margin-top: 11px ">
+                        <h5 class="twitter-followers-textName ">Simon&nbsp;<img src="assets/reward.svg " width="20 "> </h5>
+                        <h5 class="twitter-followers-subHeading ">@SimonJosh</h5>
+                    </li>
+                    <li class="col-4 offset-md-4 ">
+                        <button type="button " class="btn btn-outline-primary twitter-follow-btn ">Follow</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tweet-card-footer ">
+                <a href=" ">Show more</a>
+            </div>
+        </div>
+        <div class="policy-section ">
+            <ul class="policy-section-inner ">
+                <li>Terms</li>
+                <li>Privacy Policy</li>
+                <li>Cookies</li>
+                <li>Ads info</li>
+                <li>More <i class="fas fa-chevron-down "></i></li>
+            </ul>
+            <p class="twitter-copyright "><i class="far fa-copyright "></i> 2020 Twitter, Inc.</p>
+
+        </div>
+
+
+    </div>
+</div>
+<!-- modal -->
+
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+    <div class="modal-dialog ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h5 class="modal-title " id="exampleModalLabel ">Modal title</h5>
+                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+            <span aria-hidden="true ">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body ">
+                ...
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                <button type="button " class="btn btn-primary ">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js "></script>
+    <!-- <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js "></script> -->
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>

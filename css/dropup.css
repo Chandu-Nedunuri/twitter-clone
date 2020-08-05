@@ -1,0 +1,106 @@
+.dropbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 0.1rem 5rem 0.1rem 1rem;
+    background-color: none !important;
+    display: inline-flex;
+    position: relative;
+}
+
+button.dropbtn {
+    background: none !important;
+}
+
+.twitter-profile-text {
+    margin: 0 7px;
+}
+
+.profile-icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+}
+
+.dropup {
+    position: fixed;
+    display: inline-block;
+    left: 5%;
+    bottom: 5px;
+    width: 100%;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 32, 43);
+    box-shadow: -1px 1px 3px 1px rgba(255, 255, 255, 0.1);
+    width: 300px;
+    bottom: 65px;
+    z-index: 1;
+    height: 156px;
+    border-radius: 10px;
+}
+
+.dropup-content a {
+    color: #fff;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+.dropup-content a:hover {
+    background-color: #ccc
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+    cursor: pointer;
+}
+
+.dropup:hover .dropbtn {
+    background-color: #253341!important;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.drop-item {
+    display: inline-flex;
+}
+
+.dropup-content-header {
+    display: inline-flex;
+    width: inherit;
+    border-bottom: 1px solid #657786;
+    padding: 8px 6px;
+}
+
+
+/* .twitter-profile-name {
+    float: right;
+    font-size: 14px;
+    font-weight: bold !important;
+    padding: 0 10px;
+    position: relative;
+    top: -5px;
+} */
+
+.dropup-content-header {
+    display: inline-flex;
+}
+
+.drop-up-items {
+    padding: 0;
+}
+
+.drop-up-items>li {
+    padding: 10px 6px;
+    border-bottom: 1px solid #657786;
+}
+
+.drop-up-items>li:nth-child(2) {
+    border-bottom: none;
+}
